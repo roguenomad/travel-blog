@@ -1,9 +1,18 @@
-import React from 'react'
+import './App.css';
+import Header from "./Header"
+import Post from "./Post";
+import Layout from "./Layouts"
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div>App</div>
-  )
+    <Routes>
+      <Route path = "/" element = { <Layout /> }> 
+        <Route index element = { <Post /> } />
+        <Route path = { '/login' } element = { <div>login page</div> } />
+      </Route>
+    </Routes>
+  );
 }
 
-export default App
+export default App;
