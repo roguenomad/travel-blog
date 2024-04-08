@@ -1,19 +1,71 @@
-main {
-  padding: 10px;
-  max-width: 600px;
-  /* margin: 0 auto; centers text*/
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
-header a {
-  text-decoration: none;
+h1 {
   color: blueviolet;
 }
 
-header nav {
+html {
+  background-color: #F5F1E7;
+}
+
+
+
+
+/*****NAVBAR****/
+
+
+
+nav {
+  background-color: #3B4138;
+  height: 75px;
+  width: 80vw;
   display: flex;
-  gap: 15px
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+
+nav li {
+  text-align: center;
+  list-style-type: none;
+  color: #fff;
+  /* padding: 2%; */
+  width: auto;
+  margin: 10px;
+  background-color: transparent;
+  
+}
+
+nav li:hover {
+  height: 7px;
+  background-color: #C6CDBC;
+  transition: ease 0.5s;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/***** Home hero *****/
+
+.hero {
+  margin: 8vw;
+}
+
+.hero-bg {
+  background-color: #451B20;
+  /* width: 80vw; */
+  height: 50vw;
+  margin-top: 10vh;
+}
+
+.hero-img {
+  width: 70vh;
+  height: 70vh;
+  /* background-image: url(./images/rice-fields-ind.jpeg); */
 }

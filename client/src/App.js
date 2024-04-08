@@ -1,21 +1,26 @@
 import './App.css';
-import Header from "./Header"
-import Post from "./Post";
-import IndexPage from './pages/IndexPage';
-import LoginPage from './pages/LoginPage';
-import Layout from "./Layouts"
-import { Route, Routes } from "react-router-dom";
-import RegisterPage from './pages/RegisterPage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import Destinations from "./pages/Destinations";
+import Plan from "./pages/Plan";
+import Blogs from "./pages/Blogs";
+import About from "./pages/About";
+
 
 function App() {
   return (
-    <Routes>
-      <Route path = "/" element = { <Layout /> }> 
-        <Route index element = { <IndexPage /> } />
-        <Route path = '/login' element = { <LoginPage /> } />
-        <Route path= '/register' element = { <RegisterPage /> } />
-      </Route>
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element= { <Layout /> }>
+        <Route index element= { <Home /> } />
+          <Route path='destinations' element= { <Destinations /> }/>
+          <Route path='plan' element= { <Plan /> }/>
+          <Route path='blogs' element= { <Blogs /> }/>
+          <Route path='about' element= { <About /> }/> 
+        </Route>      
+      </Routes>
+    </BrowserRouter>
   );
 }
 
