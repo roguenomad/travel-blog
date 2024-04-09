@@ -6,7 +6,13 @@ html {
   background-color: #F5F1E7;
 }
 
-
+:root {
+  --forest-green: #3B4138;
+  --olive-green: #C6CDBC;
+  --beige: #F5F1E7;
+  --burgundy: #451B20;
+  --dark-blue: #14171F;
+}
 
 
 /*****NAVBAR****/
@@ -14,7 +20,7 @@ html {
 
 
 nav {
-  background-color: #3B4138;
+  background-color: var(--forest-green);
   height: 75px;
   width: 80vw;
   display: flex;
@@ -42,7 +48,7 @@ nav li {
 
 nav li:hover {
   height: 7px;
-  background-color: #C6CDBC;
+  background-color: var(--olive-green);
   transition: ease 0.5s;
 }
 
@@ -55,17 +61,37 @@ nav li:hover {
 
 .hero {
   margin: 8vw;
-}
-
-.hero-bg {
-  background-color: #451B20;
-  /* width: 80vw; */
-  height: 50vw;
-  margin-top: 10vh;
+  background-color: var(--burgundy);
 }
 
 .hero-img {
-  width: 70vh;
+  background: url(./images/rice-fields-ind.jpeg) no-repeat center;
+  background-size: cover;
+  width: 65vw;
   height: 70vh;
-  /* background-image: url(./images/rice-fields-ind.jpeg); */
+  transform: translate(-5vw, 5vh);
+  z-index: 1;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  padding: 10vw 20vw 0 10vw;
+  /* width: 80vh; */
+  /* height: 100vh; */
+  white-space: nowrap;
+  right: 0;
+  z-index: 2;
+}
+
+.hero-text span {
+  line-height: 5vh;
+  background-color: var(--beige);
+  /* height: 5px; */
+  position: relative;
+  /* margin-top: 1vh; */
+}
+
+.hero-text h3 {
+  /* padding: 1vh; */
 }
