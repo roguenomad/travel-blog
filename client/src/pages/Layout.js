@@ -13,7 +13,7 @@ const Layout = () => {
                         <NavLink to = "/destinations" className="nav-link"> Destinations </NavLink>
                     </li>
                     <li>
-                        <NavLink to = "/plan" className="nav-link"> Plan Your Trip </NavLink>
+                        <NavLink to = "/plan" className="nav-link"> Trip Planner </NavLink>
                     </li>
                     <li>
                         <NavLink to = "/blogs" className="nav-link"> Extras </NavLink>
