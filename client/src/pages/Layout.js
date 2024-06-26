@@ -1,12 +1,11 @@
-import { Outlet, NavLink } from "react-router-dom";
-
+import React from 'react'
+import { Outlet, NavLink, Link } from "react-router-dom";
+import logo from '../assets/rn-logo.png'
+import insta from '../assets/insta-icon.png'
 
 const Layout = () => {
     return (
-        <div className="navBar">
-            <div className="logo-image">
-                {/* <img></img> */}
-            </div>
+           <div className='navBar'> <img src={logo} alt='Logo' className='logo-img'/>;
             <nav>
                 <ul>
                     <li>
@@ -26,7 +25,11 @@ const Layout = () => {
                     </li>
                 </ul>
             </nav>
-
+            {/* <div className='social-icons'>
+            <Link to="https://www.instagram.com/connected_confessions/" target="_blank"><img src={insta} className="githubIcon" /></Link>
+            <Link to="https://www.instagram.com/connected_confessions/" target="_blank"><img src={insta} className="githubIcon" /></Link>
+            <Link to="https://www.instagram.com/connected_confessions/" target="_blank"><img src={insta} className="githubIcon" /></Link>                                
+            </div> */}
             <Outlet />
         </div>
     )
