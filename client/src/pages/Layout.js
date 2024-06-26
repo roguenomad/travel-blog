@@ -1,9 +1,12 @@
 import { Outlet, NavLink } from "react-router-dom";
 
+
 const Layout = () => {
     return (
         <div className="navBar">
-            <h1>Rogue Nomad</h1>
+            <div className="logo-image">
+                {/* <img></img> */}
+            </div>
             <nav>
                 <ul>
                     <li>
@@ -19,7 +22,7 @@ const Layout = () => {
                         <NavLink to = "/blogs" className="nav-link"> Extras </NavLink>
                     </li>
                     <li>
-                        <NavLink to = "/about" className="nav-link"> Work with Me </NavLink>
+                        <NavLink to = "/about" className="nav-link"> About </NavLink>
                     </li>
                 </ul>
             </nav>
